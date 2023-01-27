@@ -63,9 +63,7 @@ export const Login = (props) => {
 
   return (
       <div className='auth-form-container'>
-        {
-         displaySaif ?  <p>Saif</p> : <p>Subahan</p>
-        }
+
       <form className='login-form' onSubmit={handleSubmit}>
           <label htmlFor="email" >Email</label>
           <input value={loginForm.email} type="email" placeholder='example@example.com' id="email" name="email" onChange={setEmail} required/>
